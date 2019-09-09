@@ -29,7 +29,10 @@ public class HelloController {
     @RequestMapping("/hello2")
     public String hello2(){
 
-        Article article = new Article(111221L,"sss1111");
+        //Article article = new Article(111221L,"sss1111");
+        Article article = new Article();
+        article.setId(111L);
+        article.setAuthor("dddd");
         article.setAuthor("hello222ddd");
         log.info("article={}",article.toString());
 
