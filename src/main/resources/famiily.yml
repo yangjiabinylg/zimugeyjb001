@@ -1,0 +1,29 @@
+
+
+#1.一个家庭有爸爸、妈妈、孩子
+#2.这个家庭有一个名字（family-name）叫做“happy family”
+#3.爸爸又名字(name)和年龄(age)两个属性
+#4.妈妈有两个别名
+#5.孩子除了名字(name)和年龄(age)两个属性，还有一个friends的集合
+#6.每个friend有两个属性hobby(爱好)和性别(sex)
+
+
+#family:
+#  family-name: "happy \n family"
+#  #family-name:
+#  father:
+#    name: yangjiabin
+#    #age: ${random.int}
+#    age: 17
+#  mother:
+#    alias:
+#      - lovly
+#      - alice
+#  child:
+#    name: 张三
+#    age:  ${family.father.age:6}
+#    friends:
+#      - hobby: 足球
+#        sex: 男
+#      - hobby: 篮球
+#        sex: 女
