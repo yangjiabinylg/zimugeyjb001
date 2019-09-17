@@ -18,12 +18,12 @@ import java.util.List;
 @Repository
 public class ArticleJDBCDao {
 
-    @Resource
-    private JdbcTemplate jdbcTemplate;
+//    @Resource
+//    private JdbcTemplate jdbcTemplate;
 
 
     //保存文章
-    public void save(Article article){
+    public void save(Article article,JdbcTemplate jdbcTemplate){
         //jdbcTemplate.update适合于insert update 和delete操作
         jdbcTemplate.update("insert into article(author,title,content,create_time) values(?,?,?,?)",
                 article.getAuthor(),
@@ -34,13 +34,13 @@ public class ArticleJDBCDao {
 
 
     //删除文章
-    public void deleteById(Long id){
+    public void deleteById(Long id,JdbcTemplate jdbcTemplate){
         //jdbcTemplate.update适合于insert update 和delete操作
         jdbcTemplate.update("delete from article where id = ?",new Object[]{id});
     }
 
     //更新文章
-    public void updateById(Article article){
+    public void updateById(Article article,JdbcTemplate jdbcTemplate){
         //jdbcTemplate.update适合于insert update 和delete操作
         jdbcTemplate.update("update article set author = ? ,title = ? ,content = ?,create_time = ? where id = ?",
                 article.getAuthor(),
@@ -51,7 +51,7 @@ public class ArticleJDBCDao {
     }
 
     //根据id查找文章
-    public Article findById(Long id){
+    public Article findById(Long id,JdbcTemplate jdbcTemplate){
         //queryForObject用于查询单条记录返回结果
         return (Article) jdbcTemplate.queryForObject("select * from article where id = ?",
                 new Object[]{id},new BeanPropertyRowMapper<>(Article.class));
@@ -59,7 +59,7 @@ public class ArticleJDBCDao {
 
 
     //查询所有
-    public List<Article> findAll(){
+    public List<Article> findAll(JdbcTemplate jdbcTemplate){
         //query查询列表结果
         return jdbcTemplate.query("select * from article",
                new BeanPropertyRowMapper<>(Article.class));
