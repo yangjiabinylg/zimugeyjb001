@@ -5,20 +5,51 @@ spring:
     date-format: yyyy-mm-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
+
+#  jdbc
 #    url: jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false
 #    username: root
 #    password: root
 #    driver-class-name: com.mysql.jdbc.Driver
-     primary:
-       jdbc-url: jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false
-       username: root
-       password: root
-       driver-class-name: com.mysql.jdbc.Driver
-     secondary:
-       jdbc-url: jdbc:mysql://127.0.0.1:3306/testdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false
-       username: root
-       password: root
-       driver-class-name: com.mysql.jdbc.Driver
+
+
+#  jdbc多数据源
+#     primary:
+#       jdbc-url: jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#       username: root
+#       password: root
+#       driver-class-name: com.mysql.jdbc.Driver
+#     secondary:
+#       jdbc-url: jdbc:mysql://127.0.0.1:3306/testdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#       username: root
+#       password: root
+#       driver-class-name: com.mysql.jdbc.Driver
+
+#  带事务的自定义数据源     完全自定义数据源
+primarydb:
+  uniqueResourceName: primary
+  xaDataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+  xaProperties:
+    url: jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    user: root
+    password: root
+  exclusiveConnectionMode: true
+  minPoolSize: 3
+  maxPoolSize: 10
+  testQuery: select 1 from dual #由于采用Hikiricp,用于检测数据库链接是否存活。
+
+secondarydb:
+  uniqueResourceName: secondary
+  xaDataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+  xaProperties:
+    url: jdbc:mysql://127.0.0.1:3306/testdb2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    user: root
+    password: root
+  exclusiveConnectionMode: true
+  minPoolSize: 3
+  maxPoolSize: 10
+  testQuery: select 1 from dual #由于采用Hikiricp,用于检测数据库链接是否存活。
+
 
 
 #  CREATE TABLE `article` (

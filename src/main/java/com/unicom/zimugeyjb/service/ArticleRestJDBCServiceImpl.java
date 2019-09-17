@@ -35,9 +35,12 @@ public class ArticleRestJDBCServiceImpl implements ArticleRestService {
     @Override
     public Article saveArticle(Article article) {
 
+        //出现了异常   只有第一个会回滚事务    第二个是不会回滚事务的
         articleJDBCDao.save(article,primaryJdbcTemplate);
 
         articleJDBCDao.save(article,secondaryJdbcTemplate);
+
+        //int a = 2/0;
 
         return article;
     }
