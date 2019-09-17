@@ -1,14 +1,17 @@
 package com.unicom.zimugeyjb.service;
 
-import com.unicom.zimugeyjb.dao.ArticleRepository;
+import com.unicom.zimugeyjb.jpadao.testdbjpa.ArticleRepository;
+import com.unicom.zimugeyjb.jpadao.testdbjpa2.MessageRepository;
 import com.unicom.zimugeyjb.model.ArticleVo;
 import com.unicom.zimugeyjb.pojo.Article;
+import com.unicom.zimugeyjb.pojo.Message;
 import com.unicom.zimugeyjb.utils.DozerUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.jws.WebResult;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,6 +30,9 @@ public class ArticleRestJpaServiceImpl implements ArticleRestService {
     private ArticleRepository articleRepository;
 
     @Resource
+    private MessageRepository messageRepository;
+
+    @Resource
     private Mapper dozerMapper;
 
     @Override
@@ -34,6 +40,13 @@ public class ArticleRestJpaServiceImpl implements ArticleRestService {
 
         Article article = dozerMapper.map(articleVo, Article.class);
         articleRepository.save(article);
+
+
+        Message  message = new Message();
+        message.setName("张三");
+        message.setContent("内容");
+        messageRepository.save(message);
+
         return articleVo;
     }
 

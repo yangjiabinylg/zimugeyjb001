@@ -1,15 +1,13 @@
-package com.unicom.zimugeyjb.dao;
+package com.unicom.zimugeyjb.jpadao;
 
+import com.unicom.zimugeyjb.jpadao.testdbjpa.ArticleRepository;
 import com.unicom.zimugeyjb.pojo.Article;
-import com.unicom.zimugeyjb.service.ArticleRestService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
-
-import static org.junit.Assert.*;
 
 /**
  * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>

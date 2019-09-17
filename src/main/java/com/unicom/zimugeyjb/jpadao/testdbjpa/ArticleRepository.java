@@ -1,4 +1,4 @@
-package com.unicom.zimugeyjb.dao;
+package com.unicom.zimugeyjb.jpadao.testdbjpa;
 
 import com.unicom.zimugeyjb.pojo.Article;
 import org.springframework.data.jpa.repository.JpaRepository;
