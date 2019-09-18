@@ -5,7 +5,17 @@ spring:
     date-format: yyyy-mm-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-      url: jdbc:mysql://139.224.111.105:3306/testdbmybatis?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#      url: jdbc:mysql://139.224.111.105:3306/testdbmybatis?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#      username: root
+#      password: root
+#      driver-class-name: com.mysql.jdbc.Driver
+    primary:
+      jdbc-url: jdbc:mysql://139.224.111.105:3306/testdbmybatis?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      jdbc-url: jdbc:mysql://139.224.111.105:3306/testdbmybatis2?useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver

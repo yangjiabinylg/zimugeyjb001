@@ -1,13 +1,15 @@
-package com.unicom.zimugeyjb.dao;
+package com.unicom.zimugeyjb.dao.db1;
 
 import com.unicom.zimugeyjb.pojo.Article;
 
 import java.util.List;
 
 import com.unicom.zimugeyjb.pojo.ArticleExample;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+@Mapper
 @Repository
 public interface ArticleMapper {
     long countByExample(ArticleExample example);

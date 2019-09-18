@@ -1,8 +1,10 @@
 package com.unicom.zimugeyjb.service;
 
-import com.unicom.zimugeyjb.dao.ArticleMapper;
+import com.unicom.zimugeyjb.dao.db1.ArticleMapper;
+import com.unicom.zimugeyjb.dao.db2.MessageMapper;
 import com.unicom.zimugeyjb.model.ArticleVo;
 import com.unicom.zimugeyjb.pojo.Article;
+import com.unicom.zimugeyjb.pojo.Message;
 import com.unicom.zimugeyjb.utils.DozerUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
@@ -28,11 +30,21 @@ public class ArticleMybatisRestServiceImpl implements ArticleRestService {
     @Resource
     private ArticleMapper articleMapper;
 
+    @Resource
+    private MessageMapper messageMapper;
+
 
     @Override
     public ArticleVo saveArticle(ArticleVo articleVo) {
         Article article = dozerMapper.map(articleVo,Article.class);
         articleMapper.insert(article);
+
+        Message message = new Message();
+        message.setName("杨");
+        message.setContent("up");
+        messageMapper.insert(message);
+
+
         return articleVo;
     }
 

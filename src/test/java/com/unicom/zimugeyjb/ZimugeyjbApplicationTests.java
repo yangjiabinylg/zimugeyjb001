@@ -2,7 +2,7 @@ package com.unicom.zimugeyjb;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.unicom.zimugeyjb.dao.ArticleMapper;
+import com.unicom.zimugeyjb.dao.db1.ArticleMapper;
 import com.unicom.zimugeyjb.pojo.Article;
 import org.junit.Test;
 import org.junit.runner.RunWith;
