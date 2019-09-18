@@ -1,6 +1,6 @@
 package com.unicom.zimugeyjb.controller;
 
-import com.unicom.zimugeyjb.model.Article;
+import com.unicom.zimugeyjb.model.ArticleVo;
 import com.unicom.zimugeyjb.model.G;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,14 +29,14 @@ public class HelloController {
     @RequestMapping("/hello2")
     public String hello2(){
 
-        //Article article = new Article(111221L,"sss1111");
-        Article article = new Article();
+        //ArticleVo article = new ArticleVo(111221L,"sss1111");
+        ArticleVo article = new ArticleVo();
         article.setId(111L);
         article.setAuthor("dddd");
         article.setAuthor("hello222ddd");
         log.info("article={}",article.toString());
 
-        Article article1 = Article.builder().id(2L).author("jjj").build();
+        ArticleVo article1 = ArticleVo.builder().id(2L).author("jjj").build();
         log.info("article1={}",article1.toString());
         return article.toString()+"+  hello  world  +"+article1.toString();
     }

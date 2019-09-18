@@ -23,7 +23,7 @@ import java.util.List;
 @Builder
 //默认是字段定义的顺序返回  这里可以重新定义返回的顺序
 @JsonPropertyOrder(value = { "content","title"})
-public class Article {
+public class ArticleVo {
 
 
     //序列化反序列化忽略这个字段
