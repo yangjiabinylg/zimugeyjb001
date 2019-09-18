@@ -9,6 +9,7 @@ import com.unicom.zimugeyjb.utils.DozerUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import javax.jws.WebResult;
@@ -35,6 +36,7 @@ public class ArticleRestJpaServiceImpl implements ArticleRestService {
     @Resource
     private Mapper dozerMapper;
 
+    @Transactional
     @Override
     public ArticleVo saveArticle(ArticleVo articleVo) {
 
@@ -46,6 +48,8 @@ public class ArticleRestJpaServiceImpl implements ArticleRestService {
         message.setName("张三");
         message.setContent("内容");
         messageRepository.save(message);
+
+        int a = 3/0;
 
         return articleVo;
     }

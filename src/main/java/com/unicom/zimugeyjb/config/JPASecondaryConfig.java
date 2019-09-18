@@ -1,76 +1,85 @@
 package com.unicom.zimugeyjb.config;
 
-
+import com.atomikos.jdbc.AtomikosDataSourceBean;
+import com.mysql.jdbc.jdbc2.optional.MysqlXADataSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings;
-import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
-import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.annotation.Resource;
-import javax.persistence.EntityManager;
 import javax.sql.DataSource;
-import java.util.Map;
+import java.sql.SQLException;
+import java.util.HashMap;
 
 /**
  * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>
  * @Desc: <br/>
  * @ProjectName: zimugeyjb <br/>
- * @Date: 2019/9/17 16:24 <br/>
+ * @Date: 2019/9/18 10:05 <br/>
  * @Author: yangjiabin
  */
 @Configuration
-@EnableTransactionManagement
+@DependsOn("transactionManager")
 @EnableJpaRepositories(
-        entityManagerFactoryRef = "entityManagerFactorySecondary",
-        transactionManagerRef = "transactionManagerSecondary",
-        basePackages = {"com.unicom.zimugeyjb.jpadao.testdbjpa2"}//设置Repository所在位置
+        basePackages = "com.unicom.zimugeyjb.jpadao.testdbjpa2",//设置Repository所在位置
+        entityManagerFactoryRef = "secondaryEntityManager",
+        transactionManagerRef = "transactionManager"
 )
 public class JPASecondaryConfig {
 
-    @Resource
-    @Qualifier("secondaryDataSource")
-    private DataSource secondaryDataSource;
+    @Autowired
+    private JpaVendorAdapter jpaVendorAdapter;
 
 
 
-    @Bean(name = "entityManagerSecondary")
-    public EntityManager entityManager(EntityManagerFactoryBuilder builder){
-        return entityManagerFactorySecondary(builder).getObject().createEntityManager();
+    @Bean(name = "secondaryDataSourceProperties")
+    @Qualifier("secondaryDataSourceProperties")
+    @ConfigurationProperties(prefix = "spring.datasource.secondary")
+    public DataSourceProperties masterDataSourceProperties(){
+        return new DataSourceProperties();
     }
 
 
-    @Bean(name = "entityManagerFactorySecondary")
-    public LocalContainerEntityManagerFactoryBean entityManagerFactorySecondary(EntityManagerFactoryBuilder builder){
-        return builder
-                .dataSource(secondaryDataSource)
-                .properties(getVendorProperties())
-                //设置实体类所在目录
-                .packages("com.unicom.zimugeyjb.pojo")
-                .persistenceUnit("secondaryPersistenceUnit")
-                .build();
+    @Bean(name = "secondaryDataSource" ,initMethod = "init",destroyMethod = "close")
+    @ConfigurationProperties(prefix = "spring.datasource.secondary")
+    public DataSource masterDataSource() throws SQLException {
+        MysqlXADataSource mysqlXADataSource = new MysqlXADataSource();
+        mysqlXADataSource.setURL(masterDataSourceProperties().getUrl());
+        mysqlXADataSource.setPinGlobalTxToPhysicalConnection(true);
+        mysqlXADataSource.setPassword(masterDataSourceProperties().getPassword());
+        mysqlXADataSource.setUser(masterDataSourceProperties().getUsername());
+        AtomikosDataSourceBean xaDataSource = new AtomikosDataSourceBean();
+        xaDataSource.setXaDataSource(mysqlXADataSource);
+        xaDataSource.setUniqueResourceName("secondary");
+        xaDataSource.setBorrowConnectionTimeout(60);
+        xaDataSource.setMaxPoolSize(20);
+        return xaDataSource;
     }
 
 
-    @Resource
-    private JpaProperties jpaProperties;
 
-    private Map  getVendorProperties() {
-        return jpaProperties.getHibernateProperties(new HibernateSettings());
-    }
+    @Bean(name = "secondaryEntityManager")
+    @DependsOn("transactionManager")
+    public LocalContainerEntityManagerFactoryBean masterEntityManager() throws Throwable{
 
-
-
-    @Bean(name = "transactionManagerSecondary")
-    PlatformTransactionManager transactionManagerSecondary(EntityManagerFactoryBuilder builder){
-        return new JpaTransactionManager(entityManagerFactorySecondary(builder).getObject());
+        HashMap<String ,Object> properties = new HashMap<>();
+        properties.put("hibernate.transaction.jta.platform",AtomikosJtaPlateform.class.getName());
+        properties.put("javax.persistence.transactionType","JTA");
+        LocalContainerEntityManagerFactoryBean entityManager = new LocalContainerEntityManagerFactoryBean();
+        entityManager.setJtaDataSource(masterDataSource());
+        entityManager.setJpaVendorAdapter(jpaVendorAdapter);
+        //这里要修改主数据源的扫描包   pojo  Entity所在目录
+        entityManager.setPackagesToScan("com.unicom.zimugeyjb.pojo");
+        entityManager.setPersistenceUnitName("secondaryPersistenceUnit");
+        entityManager.setJpaPropertyMap(properties);
+        return entityManager;
     }
 
 
