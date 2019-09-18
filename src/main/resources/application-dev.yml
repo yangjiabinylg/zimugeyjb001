@@ -11,7 +11,11 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
 
 mybatis:
+#  配置mybatis的sql实现的位置
   mapper-locations: classpath:mapper/*.xml
+  configuration:
+#    user_name -> userName  驼峰映射  默认就是true
+    map-underscore-to-camel-case: true
 
 logging:
   level:

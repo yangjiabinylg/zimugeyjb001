@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+/*mapper扫描的路径   mybatis*/
 @MapperScan(basePackages = {"com.unicom.zimugeyjb.dao"})
 public class ZimugeyjbApplication {
 
