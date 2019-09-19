@@ -31,12 +31,12 @@ public class HelloController {
 
         //Article article = new Article(111221L,"sss1111");
         Article article = new Article();
-        article.setId(111L);
+        article.setId("");
         article.setAuthor("dddd");
         article.setAuthor("hello222ddd");
         log.info("article={}",article.toString());
 
-        Article article1 = Article.builder().id(2L).author("jjj").build();
+        Article article1 = Article.builder().id("").author("jjj").build();
         log.info("article1={}",article1.toString());
         return article.toString()+"+  hello  world  +"+article1.toString();
     }

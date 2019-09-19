@@ -1,12 +1,22 @@
 package com.unicom.zimugeyjb.controller;
 
+import com.unicom.zimugeyjb.dao.ArticleDao;
 import com.unicom.zimugeyjb.model.AjaxResponse;
 import com.unicom.zimugeyjb.model.Article;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>
@@ -20,6 +30,16 @@ import java.util.Date;
 @RestController
 @RequestMapping("/rest")
 public class ArticleRestController {
+
+    @Resource
+    MongoRepository mongoRepository;
+
+    @Autowired
+    ArticleDao articleDao;
+
+    @Autowired
+    MongoTemplate mongoTemplate;
+
 
     @ApiOperation(value = "添加文章" , notes = "添加新的文章" ,tags = "Article" , httpMethod= "POST")
 //    @ApiImplicitParams({
@@ -39,6 +59,9 @@ public class ArticleRestController {
     //@RequestBody  不加这个注释好像接受不到数据
     public AjaxResponse saveArticle(@RequestBody   Article article){
         log.info("saveArticle:{}",article);
+
+        mongoRepository.save(article);
+
         return AjaxResponse.success(article);
     }
 
@@ -55,9 +78,12 @@ public class ArticleRestController {
 
     //@RequestMapping(value = "/article/{id}",method = RequestMethod.DELETE, produces = "application/json")
     @DeleteMapping("/article/{id}")
-    public AjaxResponse deleteArticle(   @PathVariable Long id){
+    public AjaxResponse deleteArticle(   @PathVariable String id){
         //public AjaxResponse saveArticle(@RequestBody   Article article){
         log.info("deleteArticle:{}",id);
+
+        mongoRepository.deleteById(id);
+
         return AjaxResponse.success(id);
     }
 
@@ -66,21 +92,36 @@ public class ArticleRestController {
     public AjaxResponse updateArticle(   @PathVariable Long id,@RequestBody Article article){
         //public AjaxResponse saveArticle(@RequestBody   Article article){
         log.info("updateArticle:{}",article);
+
+        mongoRepository.save(article);
+
         return AjaxResponse.success(article);
     }
 
 
     //@RequestMapping(value = "/article/{id}",method = RequestMethod.GET, produces = "application/json")
     @GetMapping("/article/{id}")
-    public AjaxResponse getArticle(   @PathVariable Long id){
+    public AjaxResponse getArticle(   @PathVariable String id){
         //public AjaxResponse saveArticle(@RequestBody   Article article){
 
-        Article article = Article.builder().id(1L).author("yangjiabin")
-                .content("我是内容").createTime(new Date()).title("标题").build();
-        log.info("updateArticle:{}",article);
-        return AjaxResponse.success(article);
+        Optional<Article> article = mongoRepository.findById(id);
+        log.info("updateArticle:{}",article.get());
+        return AjaxResponse.success(article.get());
     }
 
+    @GetMapping("/article")
+    public @ResponseBody AjaxResponse getAll(){
+        return AjaxResponse.success(mongoRepository.findAll());
+    }
+
+    @GetMapping("/getArticleByAuthor")
+    public @ResponseBody AjaxResponse getByAuthor(String author){
+        //return AjaxResponse.success(articleDao.findByAuthor(author));
+
+        Query query = new Query(Criteria.where("author").is("yangjiabin"));
+        List<Article> articles = mongoTemplate.find(query, Article.class);
+        return AjaxResponse.success(articles.get(0));
+    }
 
     /**
      {
