@@ -9,6 +9,7 @@ import com.unicom.zimugeyjb.utils.DozerUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -34,6 +35,7 @@ public class ArticleMybatisRestServiceImpl implements ArticleRestService {
     private MessageMapper messageMapper;
 
 
+    @Transactional
     @Override
     public ArticleVo saveArticle(ArticleVo articleVo) {
         Article article = dozerMapper.map(articleVo,Article.class);
@@ -44,6 +46,7 @@ public class ArticleMybatisRestServiceImpl implements ArticleRestService {
         message.setContent("up");
         messageMapper.insert(message);
 
+        //int a = 2/0;
 
         return articleVo;
     }
