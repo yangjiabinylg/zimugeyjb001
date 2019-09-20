@@ -1,5 +1,7 @@
 server:
   port: 8888
+  servlet:
+    context-path: /yangjiabin
 spring:
   jackson:
     date-format: yyyy-mm-dd HH:mm:ss
