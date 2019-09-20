@@ -9,6 +9,11 @@ spring:
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+
 
 mybatis:
 #  配置mybatis的sql实现的位置
