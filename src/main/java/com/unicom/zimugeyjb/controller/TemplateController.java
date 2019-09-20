@@ -35,9 +35,9 @@ public class TemplateController {
 
         Map<String ,String > user = new HashMap<>();
         user.put("id","1");
-        //user.put("username","yang");
-        user.put("username",null);
-        user.put("password","ayngjaibin");
+        user.put("username","yang");
+        //user.put("username",null);
+        user.put("password","ayngjaibin1111");
 
         model.addAttribute("user",user);
 
