@@ -16,6 +16,11 @@ spring:
     charset: UTF-8 # 文件编码
     template-loader-path: classpath:/templates/
 
+
+context:
+  listener:
+    classes: com.unicom.zimugeyjb.customlistener.otherMethod.MyListener3
+
 mybatis:
 #  配置mybatis的sql实现的位置
   mapper-locations: classpath:mapper/*.xml

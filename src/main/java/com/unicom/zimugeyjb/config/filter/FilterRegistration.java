@@ -1,4 +1,4 @@
-package com.unicom.zimugeyjb.config;
+package com.unicom.zimugeyjb.config.filter;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
