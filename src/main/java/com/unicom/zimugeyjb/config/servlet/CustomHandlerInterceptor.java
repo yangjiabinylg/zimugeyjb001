@@ -1,4 +1,4 @@
-package com.unicom.zimugeyjb.config;
+package com.unicom.zimugeyjb.config.servlet;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;

@@ -1,5 +1,6 @@
-package com.unicom.zimugeyjb.config;
+package com.unicom.zimugeyjb.config.servlet;
 
+import com.unicom.zimugeyjb.config.servlet.CustomHandlerInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
