@@ -22,7 +22,12 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(){
-        return "hello  world";
+        ArticleVo article = new ArticleVo();
+        article.setId(111L);
+        article.setAuthor("dddd");
+        article.setAuthor("hello222ddd");
+        log.info("article={}",article.toString());
+        return article.toString();
     }
 
     //****************************************************
