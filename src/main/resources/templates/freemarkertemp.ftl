@@ -20,6 +20,6 @@
     </#list>
 </table>
 
-<img src="/image/template.png"
+<img src="/yjb/image/template.png"
 </body>
 </html>
