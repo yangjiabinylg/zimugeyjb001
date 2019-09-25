@@ -1,5 +1,6 @@
 package com.unicom.zimugeyjb.config.exception;
 
+import com.unicom.zimugeyjb.config.exception.htmlPageException.ModelViewException;
 import com.unicom.zimugeyjb.model.AjaxResponse;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;
@@ -7,6 +8,10 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>
@@ -15,10 +20,26 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Date: 2019/9/25 15:53 <br/>
  * @Author: yangjiabin
  */
-
-//全局异常处理类用这个注解@ContollerAdvice
+/**    */
+/**  全局异常处理类用这个注解@ContollerAdvice  */
 @ControllerAdvice
 public class WebExceptionHandler {
+
+
+    /** 全局处理  捕获modelViewExcetion   */
+    @ExceptionHandler(ModelViewException.class)
+    public ModelAndView viewExceptionHandler(HttpServletRequest request , ModelViewException e){
+        ModelAndView modelAndView = new ModelAndView();
+
+        //将异常信息设置如modelAndView
+        modelAndView.addObject("exception",e);
+        modelAndView.addObject("url",request.getRequestURL());
+        /**  跳转error页面   */
+        modelAndView.setViewName("error");
+
+        //返回ModelView
+        return modelAndView;
+    }
 
 
     /**
