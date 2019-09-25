@@ -1,11 +1,15 @@
 package com.unicom.zimugeyjb.controller;
 
+import com.unicom.zimugeyjb.model.AjaxResponse;
 import com.unicom.zimugeyjb.model.ArticleVo;
 import com.unicom.zimugeyjb.model.G;
+import com.unicom.zimugeyjb.service.ExceptionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,4 +64,31 @@ public class HelloController {
          log.info("G.RecipeDtailItemVoListBean={}",g.getRecipeDtailItemVoList().get(0).getFridayDishName());
          return null;
     }
+
+
+
+    @Resource
+    ExceptionService exceptionService;
+
+    //后台异常
+    @RequestMapping("/ex/system")
+    public @ResponseBody AjaxResponse system(){
+        exceptionService.systemBizError();
+
+        return AjaxResponse.success();
+    }
+
+
+    //用户输入异常
+    @RequestMapping("/ex/user")
+    public @ResponseBody AjaxResponse user(Integer input){
+        ;
+
+        return AjaxResponse.success(exceptionService.userBizError(input));
+    }
+
+
+
+
+
 }

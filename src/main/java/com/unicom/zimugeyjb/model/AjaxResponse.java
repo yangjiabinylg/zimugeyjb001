@@ -32,11 +32,16 @@ public class AjaxResponse {
         AjaxResponse resultBean = new AjaxResponse();
         resultBean.setIsok(false);
         resultBean.setCode(e.getCode());
+        //用户输入错误
         if(e.getCode() == CustomExceptionType.USER_INPUT_ERROR.getCode()){
             resultBean.setMessage(e.getMessage());
-        }else if(e.getCode() == CustomExceptionType.SYSTEM_ERROR.getCode()){
+        }
+        //系统内部错误
+        else if(e.getCode() == CustomExceptionType.SYSTEM_ERROR.getCode()){
             resultBean.setMessage(e.getMessage()+"，系统异常，请联系管理员：1375812****");
-        }else{
+        }
+        //未知错误
+        else{
             resultBean.setMessage("未知异常");
         }
         return resultBean;
