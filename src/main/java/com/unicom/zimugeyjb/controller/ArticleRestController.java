@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 import java.util.Date;
 import java.util.List;
 
@@ -78,7 +79,7 @@ public class ArticleRestController {
 
     //@RequestMapping(value = "/article/{id}",method = RequestMethod.PUT, produces = "application/json")
     @PutMapping("/article/{id}")
-    public AjaxResponse updateArticle(   @PathVariable Long id,@RequestBody ArticleVo article){
+    public AjaxResponse updateArticle(   @PathVariable Long id, @Valid @RequestBody ArticleVo article){
         //public AjaxResponse saveArticle(@RequestBody   ArticleVo article){
         log.info("updateArticle:{}",article);
 

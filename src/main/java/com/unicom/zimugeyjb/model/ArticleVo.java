@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 import java.util.List;
 
@@ -36,6 +37,7 @@ public class ArticleVo {
 
     private String title;
 
+    @NotEmpty(message = "文章内容不能为空，重新输入")
     private String content;
 
     //当不会null时才有这个字段

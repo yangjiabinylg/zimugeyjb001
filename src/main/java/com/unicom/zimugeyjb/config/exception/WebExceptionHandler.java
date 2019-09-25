@@ -1,6 +1,9 @@
 package com.unicom.zimugeyjb.config.exception;
 
 import com.unicom.zimugeyjb.model.AjaxResponse;
+import org.springframework.validation.BindException;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,6 +19,33 @@ import org.springframework.web.bind.annotation.ResponseBody;
 //全局异常处理类用这个注解@ContollerAdvice
 @ControllerAdvice
 public class WebExceptionHandler {
+
+
+    /**
+       这个方法和下面的方法是为了 校验用户输入出错时调用的异常
+       这个能捕获的异常小   下面的方法可以捕获更大的异常
+     */
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseBody
+    public AjaxResponse handleBindException(MethodArgumentNotValidException e){
+        //获取校验的message字段信息  加注解时写的信息
+        FieldError fieldError = e.getBindingResult().getFieldError();
+        return AjaxResponse.error(new CustomException(CustomExceptionType.USER_INPUT_ERROR,fieldError.getDefaultMessage()));
+    }
+
+    /**
+         这个方法和上面的方法是为了 校验用户输入出错时调用的异常
+         这个能捕获的异常大   上面的方法可以捕获小
+     */
+    @ExceptionHandler(BindException.class)
+    @ResponseBody
+    public AjaxResponse handleBindException(BindException e){
+        //获取校验的message字段信息  加注解时写的信息
+        FieldError fieldError = e.getBindingResult().getFieldError();
+        return AjaxResponse.error(new CustomException(CustomExceptionType.USER_INPUT_ERROR,fieldError.getDefaultMessage()));
+    }
+
+
 
 
     @ExceptionHandler(CustomException.class)
@@ -38,6 +68,8 @@ public class WebExceptionHandler {
         //都是其他已成或者未知异常
         return AjaxResponse.error(new CustomException(CustomExceptionType.OTHER_ERROR,"未知异常"));
     }
+
+
 
 
 
