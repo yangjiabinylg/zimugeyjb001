@@ -84,7 +84,7 @@ public class ArticleRestController {
 
         articleRestService.updateArticle(article);
 
-        return AjaxResponse.success(article);
+        return AjaxResponse.success();
     }
 
 

@@ -1,5 +1,7 @@
 package com.unicom.zimugeyjb.model;
 
+import com.unicom.zimugeyjb.config.exception.CustomException;
+import com.unicom.zimugeyjb.config.exception.CustomExceptionType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -21,8 +23,26 @@ public class AjaxResponse {
     private String message;
     private Object data;
 
-    public AjaxResponse() {
+    private AjaxResponse() {
     }
+
+    //请求出现异常时的响应数据封装
+    public static AjaxResponse error(CustomException e){
+
+        AjaxResponse resultBean = new AjaxResponse();
+        resultBean.setIsok(false);
+        resultBean.setCode(e.getCode());
+        if(e.getCode() == CustomExceptionType.USER_INPUT_ERROR.getCode()){
+            resultBean.setMessage(e.getMessage());
+        }else if(e.getCode() == CustomExceptionType.SYSTEM_ERROR.getCode()){
+            resultBean.setMessage(e.getMessage()+"，系统异常，请联系管理员：1375812****");
+        }else{
+            resultBean.setMessage("未知异常");
+        }
+        return resultBean;
+    }
+
+
 
     public static AjaxResponse success(){
         AjaxResponse response = new AjaxResponse();
