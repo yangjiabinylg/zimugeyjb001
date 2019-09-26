@@ -22,6 +22,11 @@ mybatis:
 #    user_name -> userName  驼峰映射  默认就是true
     map-underscore-to-camel-case: true
 
+# logback配置
+#logging:
+#  level:
+#    com.unicom.zimugeyjb.dao: debug
+
+#log4j2配置  有3个文件 对应3种环境
 logging:
-  level:
-    com.unicom.zimugeyjb.dao: debug
+  config: classpath:log4j2-dev.xml

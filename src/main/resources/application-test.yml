@@ -4,3 +4,14 @@ spring:
   jackson:
     date-format: yyyy-mm-dd HH:mm:ss
     time-zone: GMT+8
+
+
+
+# logback配置
+#logging:
+#  level:
+#    com.unicom.zimugeyjb.dao: debug
+
+#log4j2配置  有3个文件 对应3种环境
+logging:
+  config: classpath:log4j2-test.xml

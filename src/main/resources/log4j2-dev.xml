@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <Appenders>
+   <!--   配置和logback差不多的   -->
+        <!--   输出到控制台   -->
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF-8" pattern="[%-5p] %d %c - %m%n" />
+        </Console>
+
+        <!--    输出到日志文件
+         yyyy-MM-dd 是按照每天一个文件输出，
+         yyyy-MM 是按照每月一个文件输出  一般是按照天来的
+         yyyy-MM-dd-HH-mm   是按照每分钟划分
+          -->
+<!--        <RollingFile name="runtimeFile" fileName="./logs/boot-launch.log" filePattern="./logs/boot-launch-%d{yyyy-MM-dd-HH-mm}.log"-->
+<!--                     append="true">-->
+        <RollingFile name="runtimeFile" fileName="./logs/boot-launch.log" filePattern="./logs/boot-launch-%d{yyyy-MM-dd}.log"
+                     append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS Z}\t%level\t%class\t%line\t%thread\t%msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <!-- 此行以下为自动清理日志的配置 -->
+            <DefaultRolloverStrategy>
+                <Delete basePath="./logs">
+                    <!-- glob 项为需要自动清理日志的pattern -->
+                    <IfFileName glob="*.log"/>
+                    <!-- 30d 表示自动清理掉30天以前的日志文件
+                         自动删除30天前的日志
+                     -->
+                    <IfLastModified age="30d"/>
+                </Delete>
+            </DefaultRolloverStrategy>
+            <!-- 此行以上为自动清理日志的配置 -->
+        </RollingFile>
+
+
+    </Appenders>
+
+    <Loggers>
+        <!--    日志级别    -->
+        <root level="info">
+            <!--    输出到控制台      -->
+            <AppenderRef ref="CONSOLE" />
+            <!--    输出到日志文件中    -->
+            <AppenderRef ref="runtimeFile" />
+        </root>
+    </Loggers>
+
+<!--    log4j2默认是异步存储到日志文件的  不需要配置   -->
+
+</configuration>

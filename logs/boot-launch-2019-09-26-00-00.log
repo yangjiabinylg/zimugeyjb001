@@ -1,0 +1,643 @@
+2019-09-26 20:08:27.389 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 1032 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-26 20:08:27.429 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-26 20:08:27.465 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4eb2b1d7: startup date [Thu Sep 26 20:08:27 CST 2019]; root of context hierarchy
+2019-09-26 20:08:28.635 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$781dda1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-26 20:08:29.212 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-26 20:08:29.223 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:08:29.232 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-26 20:08:29.233 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-26 20:08:29.236 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-26 20:08:29.314 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-26 20:08:29.314 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 1849 ms
+2019-09-26 20:08:29.409 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-26 20:08:29.415 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-26 20:08:29.415 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-26 20:08:29.415 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-26 20:08:29.415 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-26 20:08:29.416 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-26 20:08:29.497 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-26 20:08:29.501 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-26 20:08:29.504 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-26 20:08:29.506 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-26 20:08:29.507 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-26 20:08:29.511 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-26 20:08:30.183 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-26 20:08:30.184 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-26 20:08:30.185 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-26 20:08:30.185 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:08:30.185 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:08:30.186 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-26 20:08:30.186 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-26 20:08:30.187 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-26 20:08:30.187 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-26 20:08:30.187 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-26 20:08:30.188 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-26 20:08:30.188 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-26 20:08:30.189 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-26 20:08:30.191 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-26 20:08:30.193 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-26 20:08:30.194 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-26 20:08:30.197 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-26 20:08:30.197 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-26 20:08:30.389 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:08:30.556 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4eb2b1d7: startup date [Thu Sep 26 20:08:27 CST 2019]; root of context hierarchy
+2019-09-26 20:08:30.611 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:08:30.612 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:08:30.626 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-26 20:08:30.667 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-26 20:08:30.815 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-26 20:08:31.037 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-26 20:08:31.065 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-26 20:08:31.067 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-26 20:08:31.073 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-26 20:08:31.077 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-26 20:08:31.077 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-26 20:08:31.089 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-26 20:08:31.101 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-26 20:08:31.206 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-26 20:08:31.250 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:08:31.259 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-26 20:08:31.272 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-26 20:08:31.277 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 4.181 seconds (JVM running for 5.773)
+2019-09-26 20:08:43.610 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	http-nio-8888-exec-2	Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-26 20:08:43.610 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	494	http-nio-8888-exec-2	FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-26 20:08:43.630 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	509	http-nio-8888-exec-2	FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-09-26 20:08:46.001 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:08:46.002 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:08:46.002 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:10:06.541 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	993	Thread-18	Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4eb2b1d7: startup date [Thu Sep 26 20:08:27 CST 2019]; root of context hierarchy
+2019-09-26 20:10:06.543 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	366	Thread-18	Stopping beans in phase 2147483647
+2019-09-26 20:10:06.545 +0800	INFO	org.springframework.jmx.export.MBeanExporter	451	Thread-18	Unregistering JMX-exposed beans on shutdown
+2019-09-26 20:10:06.546 +0800	INFO	org.springframework.jmx.support.MBeanRegistrationSupport	185	Thread-18	Unregistering JMX-exposed beans
+2019-09-26 20:10:24.335 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 5936 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-26 20:10:24.340 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-26 20:10:24.421 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f3f95ab: startup date [Thu Sep 26 20:10:24 CST 2019]; root of context hierarchy
+2019-09-26 20:10:25.590 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d6ddf75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-26 20:10:26.153 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-26 20:10:26.164 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:10:26.173 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-26 20:10:26.174 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-26 20:10:26.177 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-26 20:10:26.255 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-26 20:10:26.255 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 1834 ms
+2019-09-26 20:10:26.345 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-26 20:10:26.349 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-26 20:10:26.349 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-26 20:10:26.349 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-26 20:10:26.350 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-26 20:10:26.350 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-26 20:10:26.417 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-26 20:10:26.421 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-26 20:10:26.423 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-26 20:10:26.425 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-26 20:10:26.426 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-26 20:10:26.429 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-26 20:10:27.081 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:10:27.082 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-26 20:10:27.083 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-26 20:10:27.083 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-26 20:10:27.083 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:10:27.084 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-26 20:10:27.085 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-26 20:10:27.086 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-26 20:10:27.086 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-26 20:10:27.086 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-26 20:10:27.087 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-26 20:10:27.088 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-26 20:10:27.089 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-26 20:10:27.092 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-26 20:10:27.092 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-26 20:10:27.093 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-26 20:10:27.095 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-26 20:10:27.096 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-26 20:10:27.273 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:10:27.452 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f3f95ab: startup date [Thu Sep 26 20:10:24 CST 2019]; root of context hierarchy
+2019-09-26 20:10:27.506 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:10:27.506 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:10:27.521 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-26 20:10:27.563 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-26 20:10:27.721 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-26 20:10:27.942 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-26 20:10:27.969 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-26 20:10:27.970 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-26 20:10:27.976 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-26 20:10:27.980 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-26 20:10:27.980 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-26 20:10:27.993 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-26 20:10:28.005 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-26 20:10:28.112 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-26 20:10:28.155 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:10:28.163 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-26 20:10:28.176 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-26 20:10:28.182 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 4.272 seconds (JVM running for 5.689)
+2019-09-26 20:10:43.544 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	http-nio-8888-exec-1	Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-26 20:10:43.544 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	494	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-26 20:10:43.564 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	509	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-09-26 20:10:45.713 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:10:45.713 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:10:45.713 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:11:40.457 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:11:40.457 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:11:40.457 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:12:48.530 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	993	Thread-18	Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f3f95ab: startup date [Thu Sep 26 20:10:24 CST 2019]; root of context hierarchy
+2019-09-26 20:12:48.532 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	366	Thread-18	Stopping beans in phase 2147483647
+2019-09-26 20:12:48.534 +0800	INFO	org.springframework.jmx.export.MBeanExporter	451	Thread-18	Unregistering JMX-exposed beans on shutdown
+2019-09-26 20:12:48.535 +0800	INFO	org.springframework.jmx.support.MBeanRegistrationSupport	185	Thread-18	Unregistering JMX-exposed beans
+2019-09-26 20:12:52.052 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 10716 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-26 20:12:52.098 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-26 20:12:52.144 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3464e6f9: startup date [Thu Sep 26 20:12:52 CST 2019]; root of context hierarchy
+2019-09-26 20:12:53.398 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7b01f58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-26 20:12:53.930 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-26 20:12:53.941 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:12:53.950 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-26 20:12:53.950 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-26 20:12:53.954 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-26 20:12:54.035 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-26 20:12:54.035 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 1891 ms
+2019-09-26 20:12:54.127 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-26 20:12:54.131 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-26 20:12:54.132 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-26 20:12:54.132 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-26 20:12:54.132 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-26 20:12:54.133 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-26 20:12:54.206 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-26 20:12:54.211 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-26 20:12:54.213 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-26 20:12:54.215 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-26 20:12:54.216 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-26 20:12:54.219 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-26 20:12:54.887 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-26 20:12:54.889 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-26 20:12:54.889 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:12:54.889 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-26 20:12:54.890 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:12:54.891 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-26 20:12:54.891 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-26 20:12:54.891 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-26 20:12:54.891 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-26 20:12:54.892 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-26 20:12:54.892 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-26 20:12:54.893 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-26 20:12:54.894 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-26 20:12:54.896 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-26 20:12:54.897 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-26 20:12:54.898 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-26 20:12:54.900 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-26 20:12:54.900 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-26 20:12:55.079 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:12:55.270 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3464e6f9: startup date [Thu Sep 26 20:12:52 CST 2019]; root of context hierarchy
+2019-09-26 20:12:55.329 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:12:55.329 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:12:55.346 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-26 20:12:55.391 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-26 20:12:55.556 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-26 20:12:55.781 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-26 20:12:55.811 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-26 20:12:55.813 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-26 20:12:55.819 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-26 20:12:55.824 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-26 20:12:55.824 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-26 20:12:55.840 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-26 20:12:55.868 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-26 20:12:55.978 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-26 20:12:56.047 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:12:56.058 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-26 20:12:56.078 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-26 20:12:56.084 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 4.483 seconds (JVM running for 5.772)
+2019-09-26 20:13:08.889 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	http-nio-8888-exec-1	Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-26 20:13:08.890 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	494	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-26 20:13:08.912 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	509	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-09-26 20:13:11.223 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:13:11.224 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:13:11.224 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:13:18.014 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:13:18.015 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:13:18.015 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:14:00.653 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:14:00.653 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:14:00.653 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:14:02.060 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:14:02.060 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:14:02.061 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:14:50.780 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	993	Thread-18	Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3464e6f9: startup date [Thu Sep 26 20:12:52 CST 2019]; root of context hierarchy
+2019-09-26 20:14:50.782 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	366	Thread-18	Stopping beans in phase 2147483647
+2019-09-26 20:14:50.785 +0800	INFO	org.springframework.jmx.export.MBeanExporter	451	Thread-18	Unregistering JMX-exposed beans on shutdown
+2019-09-26 20:14:50.785 +0800	INFO	org.springframework.jmx.support.MBeanRegistrationSupport	185	Thread-18	Unregistering JMX-exposed beans
+2019-09-26 20:14:54.623 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 7680 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-26 20:14:54.628 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-26 20:14:54.703 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27847956: startup date [Thu Sep 26 20:14:54 CST 2019]; root of context hierarchy
+2019-09-26 20:14:55.847 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f78040e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-26 20:14:56.382 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-26 20:14:56.392 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:14:56.401 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-26 20:14:56.402 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-26 20:14:56.407 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-26 20:14:56.488 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-26 20:14:56.488 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 1785 ms
+2019-09-26 20:14:56.592 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-26 20:14:56.596 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-26 20:14:56.597 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-26 20:14:56.597 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-26 20:14:56.597 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-26 20:14:56.597 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-26 20:14:56.667 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-26 20:14:56.671 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-26 20:14:56.673 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-26 20:14:56.675 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-26 20:14:56.676 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-26 20:14:56.679 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-26 20:14:57.341 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-26 20:14:57.342 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:14:57.343 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-26 20:14:57.343 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-26 20:14:57.343 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-26 20:14:57.344 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-26 20:14:57.345 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-26 20:14:57.345 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-26 20:14:57.345 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-26 20:14:57.345 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-26 20:14:57.346 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-26 20:14:57.346 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-26 20:14:57.347 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-26 20:14:57.349 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-26 20:14:57.350 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-26 20:14:57.351 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-26 20:14:57.352 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-26 20:14:57.353 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-26 20:14:57.525 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:14:57.686 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27847956: startup date [Thu Sep 26 20:14:54 CST 2019]; root of context hierarchy
+2019-09-26 20:14:57.739 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:14:57.740 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-26 20:14:57.756 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-26 20:14:57.797 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-26 20:14:57.944 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-26 20:14:58.162 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-26 20:14:58.188 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-26 20:14:58.190 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-26 20:14:58.196 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-26 20:14:58.200 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-26 20:14:58.200 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-26 20:14:58.212 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-26 20:14:58.223 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-26 20:14:58.334 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-26 20:14:58.385 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-26 20:14:58.404 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-26 20:14:58.420 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-26 20:14:58.424 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 4.196 seconds (JVM running for 5.535)
+2019-09-26 20:15:07.420 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	http-nio-8888-exec-1	Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-26 20:15:07.421 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	494	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-26 20:15:07.440 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	509	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-09-26 20:15:07.460 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:07.460 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:07.460 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:21.437 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:21.437 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:21.437 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:23.874 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:23.874 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:23.874 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:24.787 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:24.787 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:24.787 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:25.651 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:25.651 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:25.651 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:26.358 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:26.358 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:26.359 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:26.825 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:26.826 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:26.826 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:27.034 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:27.034 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:27.035 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:27.243 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:27.244 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:27.245 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:29.395 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:29.396 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:29.396 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:29.785 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:29.786 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:29.786 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:30.245 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:30.245 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:30.245 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:30.654 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:30.654 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:30.654 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:31.427 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:31.427 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:31.428 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:32.347 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:32.347 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:32.347 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:33.002 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:33.002 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:33.002 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:33.661 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:33.662 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:33.662 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:33.947 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:33.947 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:33.947 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:34.163 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:34.163 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:34.163 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:34.355 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:34.356 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:34.356 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:34.562 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:34.562 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:34.563 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:34.751 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:34.752 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:34.752 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:34.948 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:34.948 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:34.948 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:35.163 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:35.164 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:35.164 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:35.315 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:35.315 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:35.315 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:35.482 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:35.482 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:35.483 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:35.734 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:35.735 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:35.736 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:35.831 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:35.831 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:35.831 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:36.046 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:36.046 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:36.046 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:36.187 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:36.187 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:36.187 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:36.602 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:36.602 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:36.602 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:36.998 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:36.998 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:36.998 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:37.181 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:37.181 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:37.181 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:37.381 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:37.382 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:37.382 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:37.562 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:37.562 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:37.562 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:37.913 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:37.913 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:37.913 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:38.313 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:38.314 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:38.314 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:38.545 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:38.546 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:38.546 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:38.751 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:38.752 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:38.752 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:38.975 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:38.975 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:38.976 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:39.249 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:39.249 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:39.249 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:39.460 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:39.460 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:39.460 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:39.678 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:39.679 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:39.679 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:39.866 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:39.866 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:39.866 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:40.076 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:40.076 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:40.076 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:40.292 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:40.292 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:40.292 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:40.666 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:40.666 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:40.666 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:40.905 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:40.906 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:40.906 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:41.116 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:41.116 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:41.116 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:41.330 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:41.330 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:41.331 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:41.548 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:41.549 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:41.549 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:41.753 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:41.753 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:41.754 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:41.980 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:41.980 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:41.980 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:42.209 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:42.209 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:42.209 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:42.417 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:42.418 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:42.418 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:42.612 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:42.612 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:42.612 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:42.826 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:42.827 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:42.827 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:43.033 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:43.034 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:43.034 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:43.262 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:43.262 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:43.262 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:43.465 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:43.465 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:43.465 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:43.696 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:43.696 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:43.696 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:43.912 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:43.912 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:43.912 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:44.097 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:44.098 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:44.098 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:44.314 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:44.314 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:44.314 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:44.785 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:44.786 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:44.786 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:45.178 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:45.179 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:45.179 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:45.493 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:45.493 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:45.493 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:45.745 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:45.745 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:45.745 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:46.044 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:46.044 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:46.045 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:46.262 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:46.262 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:46.262 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:46.511 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:46.511 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:46.512 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:46.728 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:46.728 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:46.728 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:46.978 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:46.979 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:46.979 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:47.403 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:47.403 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:47.403 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:47.778 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:47.778 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:47.778 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:48.130 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:48.131 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:48.131 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:48.468 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:48.468 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:48.468 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:48.851 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:48.851 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:48.851 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:49.217 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:49.218 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:49.218 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:49.528 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:49.529 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:49.529 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:49.860 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:49.860 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:49.860 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:50.139 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:50.139 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:50.139 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:50.372 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-7	==============info
+2019-09-26 20:15:50.372 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-7	==============warn
+2019-09-26 20:15:50.372 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-7	==============error
+2019-09-26 20:15:50.683 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-9	==============info
+2019-09-26 20:15:50.684 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-9	==============warn
+2019-09-26 20:15:50.684 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-9	==============error
+2019-09-26 20:15:51.073 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-1	==============info
+2019-09-26 20:15:51.074 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-1	==============warn
+2019-09-26 20:15:51.074 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-1	==============error
+2019-09-26 20:15:51.325 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-2	==============info
+2019-09-26 20:15:51.325 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-2	==============warn
+2019-09-26 20:15:51.325 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-2	==============error
+2019-09-26 20:15:51.511 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-5	==============info
+2019-09-26 20:15:51.511 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-5	==============warn
+2019-09-26 20:15:51.512 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-5	==============error
+2019-09-26 20:15:51.729 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:51.729 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:51.729 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:52.082 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:52.082 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:52.082 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:52.293 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:52.294 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:52.294 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:52.494 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:52.494 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:52.494 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:52.710 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:52.711 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:52.711 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:52.960 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:52.961 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:52.961 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:53.145 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:53.145 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:53.145 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:53.356 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:53.356 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:53.356 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:53.596 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:53.596 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:53.596 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:53.931 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:53.931 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:53.931 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:54.277 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:54.278 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:54.278 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:54.629 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:54.629 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:54.630 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:54.826 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:54.826 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:54.826 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:55.043 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:55.043 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:55.043 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:55.276 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:55.276 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:55.276 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:55.530 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:55.530 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:55.530 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:55.739 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:55.739 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:55.739 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:55.977 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:55.977 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:55.977 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:56.210 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:56.210 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:56.210 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:56.409 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:56.409 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:56.410 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:57.012 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:57.012 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:57.012 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:15:57.643 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:15:57.643 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:15:57.643 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:15:58.092 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:15:58.092 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:15:58.093 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:15:58.671 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:15:58.672 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:15:58.672 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:15:59.386 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:15:59.386 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:15:59.386 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:15:59.947 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:15:59.947 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:15:59.947 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
+2019-09-26 20:16:00.683 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-10	==============info
+2019-09-26 20:16:00.684 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-10	==============warn
+2019-09-26 20:16:00.684 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-10	==============error
+2019-09-26 20:16:01.426 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-3	==============info
+2019-09-26 20:16:01.426 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-3	==============warn
+2019-09-26 20:16:01.426 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-3	==============error
+2019-09-26 20:16:02.113 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-4	==============info
+2019-09-26 20:16:02.113 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-4	==============warn
+2019-09-26 20:16:02.113 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-4	==============error
+2019-09-26 20:16:02.770 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-6	==============info
+2019-09-26 20:16:02.770 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-6	==============warn
+2019-09-26 20:16:02.770 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-6	==============error
+2019-09-26 20:16:03.511 +0800	INFO	com.unicom.zimugeyjb.controller.LogDemoController	27	http-nio-8888-exec-8	==============info
+2019-09-26 20:16:03.511 +0800	WARN	com.unicom.zimugeyjb.controller.LogDemoController	28	http-nio-8888-exec-8	==============warn
+2019-09-26 20:16:03.511 +0800	ERROR	com.unicom.zimugeyjb.controller.LogDemoController	29	http-nio-8888-exec-8	==============error
