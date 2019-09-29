@@ -1,7 +1,7 @@
 package com.unicom.zimugeyjb.asynctask;
 
-import com.unicom.zimugeyjb.asynctask2.AsyncTask;
-import com.unicom.zimugeyjb.asynctask3.AsyncCallBackTask;
+
+import com.unicom.zimugeyjb.asynctask4.AsyncCallBackTask;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.concurrent.Future;
 
 import static java.lang.System.currentTimeMillis;
-import static java.lang.System.setOut;
 import static java.lang.Thread.sleep;
 
 /**
@@ -78,28 +77,28 @@ public class TaskTest {
 
 
 
-    @Autowired
-    private AsyncCallBackTask asyncCallBackTask;
-
-    @Test
-    public void testAsyncCallBackTask() throws  Exception{
-        long start = currentTimeMillis();
-        Future<String> task1 = asyncCallBackTask.doTaskOneCallback();
-        Future<String> task2 = asyncCallBackTask.doTaskTwoCallback();
-        Future<String> task3 = asyncCallBackTask.doTaskThreeCallback();
-
-
-        // 三个任务都调用完成  退出循环等待
-        while (!task1.isDone()||!task2.isDone()||!task3.isDone()){
-            sleep(1000);
-        }
-
-        long end = currentTimeMillis();
-        System.out.println("全部任务完成，总耗时  "+(end - start)+"  毫秒");
-
-
-
-    }
+//    @Autowired
+//    private AsyncCallBackTask asyncCallBackTask;
+//
+//    @Test
+//    public void testAsyncCallBackTask() throws  Exception{
+//        long start = currentTimeMillis();
+//        Future<String> task1 = asyncCallBackTask.doTaskOneCallback();
+//        Future<String> task2 = asyncCallBackTask.doTaskTwoCallback();
+//        Future<String> task3 = asyncCallBackTask.doTaskThreeCallback();
+//
+//
+//        // 三个任务都调用完成  退出循环等待
+//        while (!task1.isDone()||!task2.isDone()||!task3.isDone()){
+//            sleep(1000);
+//        }
+//
+//        long end = currentTimeMillis();
+//        System.out.println("全部任务完成，总耗时  "+(end - start)+"  毫秒");
+//
+//
+//
+//    }
 /**
  开始做任务一     Thread[SimpleAsyncTaskExecutor-1,5,main]
  开始做任务二     Thread[SimpleAsyncTaskExecutor-2,5,main]
@@ -122,5 +121,46 @@ public class TaskTest {
 
 
  */
+
+
+
+    @Autowired
+    private AsyncCallBackTask asyncCallBackTask;
+
+    @Test
+    public void testAsyncCallBackTask() throws  Exception{
+        long start = currentTimeMillis();
+        Future<String> task1 = asyncCallBackTask.doTaskOneCallBack() ;
+        Future<String> task2 = asyncCallBackTask.doTaskTwoCallBack();
+        Future<String> task3 = asyncCallBackTask.doTaskThreeCallBack();
+
+
+        // 三个任务都调用完成  退出循环等待
+        while (!task1.isDone()||!task2.isDone()||!task3.isDone()){
+            sleep(1000);
+        }
+
+        long end = currentTimeMillis();
+        System.out.println("全部任务完成，总耗时  "+(end - start)+"  毫秒");
+
+    }
+
+
+/**
+ 开始做任务三     Thread[taskExecutor---3,5,main]
+ 开始做任务一     Thread[taskExecutor---1,5,main]
+ 开始做任务二     Thread[taskExecutor---2,5,main]
+ 完成任务三，耗时：976毫秒     Thread[taskExecutor---3,5,main]
+ 任务三，当前线程：taskExecutor---3
+ 完成任务二，耗时：1365毫秒    Thread[taskExecutor---2,5,main]
+ 任务二，当前线程：taskExecutor---2
+ 完成任务一，耗时：1391毫秒     Thread[taskExecutor---1,5,main]
+ 任务一，当前线程：taskExecutor---1
+ 全部任务完成，总耗时  2007  毫秒
+
+
+
+ */
+
 
 }
