@@ -1433,3 +1433,688 @@ java.lang.InterruptedException: sleep interrupted
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_161]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
 2019-09-29 20:12:32.714 +0800	INFO	com.zaxxer.hikari.HikariDataSource	383	Thread-20	HikariPool-1 - Shutdown completed.
+2019-09-29 20:30:12.175 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 12256 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-29 20:30:12.181 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-29 20:30:12.229 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@225631a1: startup date [Sun Sep 29 20:30:12 CST 2019]; root of context hierarchy
+2019-09-29 20:30:13.551 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$686befd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-29 20:30:14.152 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-29 20:30:14.169 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:30:14.182 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-29 20:30:14.182 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-29 20:30:14.187 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-29 20:30:14.282 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-29 20:30:14.282 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 2053 ms
+2019-09-29 20:30:14.394 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-29 20:30:14.398 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-29 20:30:14.399 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-29 20:30:14.399 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-29 20:30:14.399 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-29 20:30:14.399 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-29 20:30:14.519 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-29 20:30:14.524 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-29 20:30:14.526 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-29 20:30:14.529 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-29 20:30:14.529 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-29 20:30:14.532 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-29 20:30:14.823 +0800	INFO	com.zaxxer.hikari.HikariDataSource	110	restartedMain	HikariPool-1 - Starting...
+2019-09-29 20:30:15.980 +0800	INFO	com.zaxxer.hikari.HikariDataSource	123	restartedMain	HikariPool-1 - Start completed.
+2019-09-29 20:30:16.076 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1208	restartedMain	Using default implementation for ThreadExecutor
+2019-09-29 20:30:16.088 +0800	INFO	org.quartz.core.SchedulerSignalerImpl	61	restartedMain	Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-29 20:30:16.088 +0800	INFO	org.quartz.core.QuartzScheduler	229	restartedMain	Quartz Scheduler v.2.3.0 created.
+2019-09-29 20:30:16.090 +0800	INFO	org.quartz.simpl.RAMJobStore	155	restartedMain	RAMJobStore initialized.
+2019-09-29 20:30:16.092 +0800	INFO	org.quartz.core.QuartzScheduler	294	restartedMain	Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-29 20:30:16.092 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1362	restartedMain	Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-29 20:30:16.092 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1366	restartedMain	Quartz scheduler version: 2.3.0
+2019-09-29 20:30:16.092 +0800	INFO	org.quartz.core.QuartzScheduler	2287	restartedMain	JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@53ed1f34
+2019-09-29 20:30:16.560 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-29 20:30:16.561 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-29 20:30:16.562 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:30:16.562 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-29 20:30:16.562 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:30:16.563 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-29 20:30:16.563 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-29 20:30:16.563 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-29 20:30:16.564 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-29 20:30:16.564 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-29 20:30:16.564 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-29 20:30:16.566 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/update],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException
+2019-09-29 20:30:16.566 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/delete],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:30:16.567 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/resume],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.resume(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:30:16.567 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/pause],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.pauseJob(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:30:16.567 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/run],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.runOnce(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:30:16.568 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/create],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.createJob(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException,java.lang.ClassNotFoundException
+2019-09-29 20:30:16.568 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-29 20:30:16.569 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-29 20:30:16.573 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-29 20:30:16.574 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-29 20:30:16.575 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-29 20:30:16.578 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-29 20:30:16.579 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-29 20:30:16.713 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	171	restartedMain	Initializing ExecutorService  'taskExecutor'
+2019-09-29 20:30:16.816 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:30:17.003 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@225631a1: startup date [Sun Sep 29 20:30:12 CST 2019]; root of context hierarchy
+2019-09-29 20:30:17.061 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:30:17.061 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:30:17.077 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-29 20:30:17.121 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-29 20:30:17.363 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-29 20:30:17.663 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-29 20:30:17.699 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-29 20:30:17.700 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-29 20:30:17.710 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-29 20:30:17.714 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-29 20:30:17.715 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-29 20:30:17.730 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-29 20:30:17.744 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-29 20:30:17.844 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-29 20:30:17.884 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	700	restartedMain	Starting Quartz Scheduler now
+2019-09-29 20:30:17.884 +0800	INFO	org.quartz.core.QuartzScheduler	547	restartedMain	Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-29 20:30:17.890 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:30:17.898 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-29 20:30:17.912 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-29 20:30:17.916 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 6.251 seconds (JVM running for 7.683)
+2019-09-29 20:31:16.926 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	993	Thread-21	Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@225631a1: startup date [Sun Sep 29 20:30:12 CST 2019]; root of context hierarchy
+2019-09-29 20:31:16.929 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	366	Thread-21	Stopping beans in phase 2147483647
+2019-09-29 20:31:16.930 +0800	INFO	org.quartz.core.QuartzScheduler	585	Thread-21	Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-29 20:31:16.933 +0800	INFO	org.springframework.jmx.export.MBeanExporter	451	Thread-21	Unregistering JMX-exposed beans on shutdown
+2019-09-29 20:31:16.934 +0800	INFO	org.springframework.jmx.support.MBeanRegistrationSupport	185	Thread-21	Unregistering JMX-exposed beans
+2019-09-29 20:31:16.935 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	208	Thread-21	Shutting down ExecutorService 'taskExecutor'
+2019-09-29 20:31:16.936 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	824	Thread-21	Shutting down Quartz Scheduler
+2019-09-29 20:31:16.937 +0800	INFO	org.quartz.core.QuartzScheduler	666	Thread-21	Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-29 20:31:16.937 +0800	INFO	org.quartz.core.QuartzScheduler	585	Thread-21	Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-29 20:31:16.937 +0800	INFO	org.quartz.core.QuartzScheduler	740	Thread-21	Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-29 20:31:16.937 +0800	INFO	com.zaxxer.hikari.HikariDataSource	381	Thread-21	HikariPool-1 - Shutdown initiated...
+2019-09-29 20:31:16.945 +0800	INFO	com.zaxxer.hikari.HikariDataSource	383	Thread-21	HikariPool-1 - Shutdown completed.
+2019-09-29 20:31:21.890 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 15024 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-29 20:31:21.932 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-29 20:31:21.980 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e1ba7a8: startup date [Sun Sep 29 20:31:21 CST 2019]; root of context hierarchy
+2019-09-29 20:31:23.292 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7839e40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-29 20:31:23.889 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-29 20:31:23.903 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:31:23.917 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-29 20:31:23.919 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-29 20:31:23.927 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-29 20:31:24.028 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-29 20:31:24.028 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 2048 ms
+2019-09-29 20:31:24.129 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-29 20:31:24.133 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-29 20:31:24.133 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-29 20:31:24.133 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-29 20:31:24.133 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-29 20:31:24.134 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-29 20:31:24.240 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-29 20:31:24.245 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-29 20:31:24.247 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-29 20:31:24.249 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-29 20:31:24.250 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-29 20:31:24.252 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-29 20:31:24.640 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1208	restartedMain	Using default implementation for ThreadExecutor
+2019-09-29 20:31:24.650 +0800	INFO	org.quartz.core.SchedulerSignalerImpl	61	restartedMain	Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-29 20:31:24.650 +0800	INFO	org.quartz.core.QuartzScheduler	229	restartedMain	Quartz Scheduler v.2.3.0 created.
+2019-09-29 20:31:24.657 +0800	INFO	com.zaxxer.hikari.HikariDataSource	110	restartedMain	HikariPool-1 - Starting...
+2019-09-29 20:31:25.377 +0800	INFO	com.zaxxer.hikari.HikariDataSource	123	restartedMain	HikariPool-1 - Start completed.
+2019-09-29 20:31:25.383 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	672	restartedMain	Using db table-based data access locking (synchronization).
+2019-09-29 20:31:25.385 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreCMT	145	restartedMain	JobStoreCMT initialized.
+2019-09-29 20:31:25.386 +0800	INFO	org.quartz.core.QuartzScheduler	294	restartedMain	Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-09-29 20:31:25.386 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1362	restartedMain	Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-29 20:31:25.387 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1366	restartedMain	Quartz scheduler version: 2.3.0
+2019-09-29 20:31:25.387 +0800	INFO	org.quartz.core.QuartzScheduler	2287	restartedMain	JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@2c8f6a8d
+2019-09-29 20:31:26.762 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-29 20:31:26.763 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-29 20:31:26.763 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-29 20:31:26.763 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:31:26.764 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:31:26.764 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-29 20:31:26.765 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-29 20:31:26.765 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-29 20:31:26.765 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-29 20:31:26.765 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-29 20:31:26.766 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-29 20:31:26.767 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/update],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException
+2019-09-29 20:31:26.767 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/delete],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:31:26.768 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/resume],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.resume(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:31:26.768 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/run],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.runOnce(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:31:26.768 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/create],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.createJob(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException,java.lang.ClassNotFoundException
+2019-09-29 20:31:26.769 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/pause],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.pauseJob(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:31:26.769 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-29 20:31:26.770 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-29 20:31:26.773 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-29 20:31:26.773 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-29 20:31:26.774 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-29 20:31:26.776 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-29 20:31:26.777 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-29 20:31:26.892 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	171	restartedMain	Initializing ExecutorService  'taskExecutor'
+2019-09-29 20:31:26.982 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:31:27.155 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e1ba7a8: startup date [Sun Sep 29 20:31:21 CST 2019]; root of context hierarchy
+2019-09-29 20:31:27.215 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:31:27.215 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:31:27.232 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-29 20:31:27.278 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-29 20:31:27.459 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-29 20:31:27.657 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-29 20:31:27.685 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-29 20:31:27.687 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-29 20:31:27.693 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-29 20:31:27.697 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-29 20:31:27.698 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-29 20:31:27.710 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-29 20:31:27.722 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-29 20:31:27.820 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-29 20:31:27.859 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	700	restartedMain	Starting Quartz Scheduler now
+2019-09-29 20:31:28.158 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	866	restartedMain	Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-09-29 20:31:28.259 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	876	restartedMain	Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-09-29 20:31:28.260 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	889	restartedMain	Recovery complete.
+2019-09-29 20:31:28.321 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	896	restartedMain	Removed 0 'complete' triggers.
+2019-09-29 20:31:28.378 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	901	restartedMain	Removed 0 stale fired job entries.
+2019-09-29 20:31:28.567 +0800	INFO	org.quartz.core.QuartzScheduler	547	restartedMain	Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-29 20:31:28.577 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:31:28.586 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-29 20:31:28.597 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-29 20:31:28.602 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 7.174 seconds (JVM running for 8.459)
+2019-09-29 20:33:36.910 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	http-nio-8888-exec-1	Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-29 20:33:36.911 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	494	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-29 20:33:36.933 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	509	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-09-29 20:35:15.022 +0800	WARN	org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver	192	http-nio-8888-exec-3	Resolved exception caused by Handler execution: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------351697376797737390725663;charset=UTF-8' not supported
+2019-09-29 20:39:43.562 +0800	WARN	org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver	192	http-nio-8888-exec-5	Resolved exception caused by Handler execution: java.lang.IllegalArgumentException: Name cannot be null.
+2019-09-29 20:40:28.861 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	973	QuartzScheduler_quartzScheduler-NON_CLUSTERED_MisfireHandler	Handling 1 trigger(s) that missed their scheduled fire-time.
+2019-09-29 20:42:31.937 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	993	Thread-24	Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e1ba7a8: startup date [Sun Sep 29 20:31:21 CST 2019]; root of context hierarchy
+2019-09-29 20:42:31.940 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	366	Thread-24	Stopping beans in phase 2147483647
+2019-09-29 20:42:31.941 +0800	INFO	org.quartz.core.QuartzScheduler	585	Thread-24	Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-29 20:42:31.943 +0800	INFO	org.springframework.jmx.export.MBeanExporter	451	Thread-24	Unregistering JMX-exposed beans on shutdown
+2019-09-29 20:42:31.944 +0800	INFO	org.springframework.jmx.support.MBeanRegistrationSupport	185	Thread-24	Unregistering JMX-exposed beans
+2019-09-29 20:42:31.945 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	208	Thread-24	Shutting down ExecutorService 'taskExecutor'
+2019-09-29 20:42:31.946 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	824	Thread-24	Shutting down Quartz Scheduler
+2019-09-29 20:42:31.946 +0800	INFO	org.quartz.core.QuartzScheduler	666	Thread-24	Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-29 20:42:31.946 +0800	INFO	org.quartz.core.QuartzScheduler	585	Thread-24	Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-29 20:42:31.947 +0800	INFO	org.quartz.core.QuartzScheduler	740	Thread-24	Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-29 20:42:31.947 +0800	INFO	com.zaxxer.hikari.HikariDataSource	381	Thread-24	HikariPool-1 - Shutdown initiated...
+2019-09-29 20:42:31.953 +0800	INFO	com.zaxxer.hikari.HikariDataSource	383	Thread-24	HikariPool-1 - Shutdown completed.
+2019-09-29 20:42:31.957 +0800	WARN	com.zaxxer.hikari.pool.ProxyConnection	161	quartzScheduler_QuartzSchedulerThread	HikariPool-1 - Connection com.mysql.jdbc.JDBC4Connection@43e6c9ff marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 34 milliseconds ago.  The last packet sent successfully to the server was 34 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395) [HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java) [HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3662) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3881) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353) [quartz-2.3.0.jar:?]
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_161]
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	... 13 more
+2019-09-29 20:42:31.961 +0800	WARN	org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler	144	quartzScheduler_QuartzSchedulerThread	Failed restore connection's original auto commit setting.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 34 milliseconds ago.  The last packet sent successfully to the server was 34 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java) ~[HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3662) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3881) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggersFired(JobStoreSupport.java:2962) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:353) [quartz-2.3.0.jar:?]
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_161]
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	... 13 more
+2019-09-29 20:42:31.962 +0800	ERROR	org.quartz.simpl.SimpleThreadPool$WorkerThread	585	WorkerThread-LastJob	Error while executing the Runnable: 
+java.lang.IllegalStateException: JobStore is shutdown - aborting retry
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3818) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3101) ~[quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1780) ~[quartz-2.3.0.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) ~[quartz-2.3.0.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.0.jar:?]
+2019-09-29 20:44:12.595 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 19388 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-29 20:44:12.600 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-29 20:44:12.644 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e3f7fc: startup date [Sun Sep 29 20:44:12 CST 2019]; root of context hierarchy
+2019-09-29 20:44:13.980 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76c9c8db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-29 20:44:14.544 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-29 20:44:14.555 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:44:14.564 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-29 20:44:14.565 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-29 20:44:14.569 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-29 20:44:14.651 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-29 20:44:14.651 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 2007 ms
+2019-09-29 20:44:14.745 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-29 20:44:14.750 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-29 20:44:14.750 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-29 20:44:14.750 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-29 20:44:14.751 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-29 20:44:14.751 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-29 20:44:14.855 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-29 20:44:14.861 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-29 20:44:14.864 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-29 20:44:14.866 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-29 20:44:14.867 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-29 20:44:14.870 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-29 20:44:15.245 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1208	restartedMain	Using default implementation for ThreadExecutor
+2019-09-29 20:44:15.256 +0800	INFO	org.quartz.core.SchedulerSignalerImpl	61	restartedMain	Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-29 20:44:15.256 +0800	INFO	org.quartz.core.QuartzScheduler	229	restartedMain	Quartz Scheduler v.2.3.0 created.
+2019-09-29 20:44:15.262 +0800	INFO	com.zaxxer.hikari.HikariDataSource	110	restartedMain	HikariPool-1 - Starting...
+2019-09-29 20:44:15.942 +0800	INFO	com.zaxxer.hikari.HikariDataSource	123	restartedMain	HikariPool-1 - Start completed.
+2019-09-29 20:44:15.966 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	672	restartedMain	Using db table-based data access locking (synchronization).
+2019-09-29 20:44:15.969 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreCMT	145	restartedMain	JobStoreCMT initialized.
+2019-09-29 20:44:15.970 +0800	INFO	org.quartz.core.QuartzScheduler	294	restartedMain	Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-09-29 20:44:15.970 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1362	restartedMain	Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-29 20:44:15.970 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1366	restartedMain	Quartz scheduler version: 2.3.0
+2019-09-29 20:44:15.971 +0800	INFO	org.quartz.core.QuartzScheduler	2287	restartedMain	JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@6453480b
+2019-09-29 20:44:17.328 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:44:17.329 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-29 20:44:17.329 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-29 20:44:17.330 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-29 20:44:17.330 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:44:17.330 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-29 20:44:17.331 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-29 20:44:17.331 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-29 20:44:17.331 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-29 20:44:17.331 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-29 20:44:17.332 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-29 20:44:17.333 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/update],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException
+2019-09-29 20:44:17.333 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/delete],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:44:17.334 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/resume],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.resume(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:44:17.334 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/pause],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.pauseJob(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:44:17.334 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/run],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.runOnce(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:44:17.334 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/create],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.createJob(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException,java.lang.ClassNotFoundException
+2019-09-29 20:44:17.335 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-29 20:44:17.336 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-29 20:44:17.338 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-29 20:44:17.339 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-29 20:44:17.340 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-29 20:44:17.342 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-29 20:44:17.342 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-29 20:44:17.459 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	171	restartedMain	Initializing ExecutorService  'taskExecutor'
+2019-09-29 20:44:17.552 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:44:17.722 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e3f7fc: startup date [Sun Sep 29 20:44:12 CST 2019]; root of context hierarchy
+2019-09-29 20:44:17.783 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:44:17.783 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:44:17.800 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-29 20:44:17.844 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-29 20:44:18.023 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-29 20:44:18.244 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-29 20:44:18.270 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-29 20:44:18.272 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-29 20:44:18.278 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-29 20:44:18.282 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-29 20:44:18.282 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-29 20:44:18.293 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-29 20:44:18.304 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-29 20:44:18.395 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-29 20:44:18.430 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	700	restartedMain	Starting Quartz Scheduler now
+2019-09-29 20:44:18.663 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	866	restartedMain	Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-09-29 20:44:18.772 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	876	restartedMain	Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-09-29 20:44:18.773 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	889	restartedMain	Recovery complete.
+2019-09-29 20:44:18.832 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	896	restartedMain	Removed 0 'complete' triggers.
+2019-09-29 20:44:18.875 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	901	restartedMain	Removed 0 stale fired job entries.
+2019-09-29 20:44:18.953 +0800	INFO	org.quartz.core.QuartzScheduler	547	restartedMain	Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-29 20:44:18.972 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:44:18.991 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-29 20:44:19.004 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-29 20:44:19.009 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 6.911 seconds (JVM running for 8.204)
+2019-09-29 20:46:30.680 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	993	Thread-23	Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e3f7fc: startup date [Sun Sep 29 20:44:12 CST 2019]; root of context hierarchy
+2019-09-29 20:46:30.683 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	366	Thread-23	Stopping beans in phase 2147483647
+2019-09-29 20:46:30.683 +0800	INFO	org.quartz.core.QuartzScheduler	585	Thread-23	Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-29 20:46:30.685 +0800	INFO	org.springframework.jmx.export.MBeanExporter	451	Thread-23	Unregistering JMX-exposed beans on shutdown
+2019-09-29 20:46:30.686 +0800	INFO	org.springframework.jmx.support.MBeanRegistrationSupport	185	Thread-23	Unregistering JMX-exposed beans
+2019-09-29 20:46:30.687 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	208	Thread-23	Shutting down ExecutorService 'taskExecutor'
+2019-09-29 20:46:30.688 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	824	Thread-23	Shutting down Quartz Scheduler
+2019-09-29 20:46:30.688 +0800	INFO	org.quartz.core.QuartzScheduler	666	Thread-23	Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-09-29 20:46:30.688 +0800	INFO	org.quartz.core.QuartzScheduler	585	Thread-23	Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-09-29 20:46:30.689 +0800	INFO	org.quartz.core.QuartzScheduler	740	Thread-23	Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-09-29 20:46:30.689 +0800	INFO	com.zaxxer.hikari.HikariDataSource	381	Thread-23	HikariPool-1 - Shutdown initiated...
+2019-09-29 20:46:30.694 +0800	INFO	com.zaxxer.hikari.HikariDataSource	383	Thread-23	HikariPool-1 - Shutdown completed.
+2019-09-29 20:46:30.695 +0800	WARN	com.zaxxer.hikari.pool.ProxyConnection	161	quartzScheduler_QuartzSchedulerThread	HikariPool-1 - Connection com.mysql.jdbc.JDBC4Connection@766cc692 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 60 milliseconds ago.  The last packet sent successfully to the server was 60 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) [HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTriggerToAcquire(StdJDBCDelegate.java:2613) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2844) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2805) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2803) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287) [quartz-2.3.0.jar:?]
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_161]
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	... 16 more
+2019-09-29 20:46:30.695 +0800	WARN	com.zaxxer.hikari.pool.ProxyConnection	161	quartzScheduler_Worker-8	HikariPool-1 - Connection com.mysql.jdbc.JDBC4Connection@58b8af19 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 24 milliseconds ago.  The last packet sent successfully to the server was 24 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) [HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.deleteFiredTrigger(StdJDBCDelegate.java:2914) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3178) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$46.executeVoid(JobStoreSupport.java:3105) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$VoidTransactionCallback.execute(JobStoreSupport.java:3765) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$VoidTransactionCallback.execute(JobStoreSupport.java:3763) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3804) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3101) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1780) [quartz-2.3.0.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) [quartz-2.3.0.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.0.jar:?]
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_161]
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	... 23 more
+2019-09-29 20:46:30.700 +0800	ERROR	org.quartz.impl.jdbcjobstore.JobStoreSupport	3714	quartzScheduler_QuartzSchedulerThread	Couldn't rollback jdbc connection. Connection is closed
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:490) ~[HikariCP-2.7.9.jar:?]
+	at com.sun.proxy.$Proxy121.rollback(Unknown Source) ~[?:?]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:377) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-2.7.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73) ~[quartz-2.3.0.jar:?]
+	at com.sun.proxy.$Proxy122.rollback(Unknown Source) ~[?:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.rollbackConnection(JobStoreSupport.java:3712) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3871) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287) [quartz-2.3.0.jar:?]
+2019-09-29 20:46:30.700 +0800	ERROR	org.quartz.impl.jdbcjobstore.JobStoreSupport	3714	quartzScheduler_Worker-8	Couldn't rollback jdbc connection. Connection is closed
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:490) ~[HikariCP-2.7.9.jar:?]
+	at com.sun.proxy.$Proxy121.rollback(Unknown Source) ~[?:?]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:377) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-2.7.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73) ~[quartz-2.3.0.jar:?]
+	at com.sun.proxy.$Proxy122.rollback(Unknown Source) ~[?:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.rollbackConnection(JobStoreSupport.java:3712) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3871) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3804) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3101) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1780) [quartz-2.3.0.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) [quartz-2.3.0.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.0.jar:?]
+2019-09-29 20:46:30.701 +0800	WARN	org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler	144	quartzScheduler_Worker-8	Failed restore connection's original auto commit setting.
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:490) ~[HikariCP-2.7.9.jar:?]
+	at com.sun.proxy.$Proxy121.setAutoCommit(Unknown Source) ~[?:?]
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java) ~[HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3662) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3881) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retryExecuteInNonManagedTXLock(JobStoreSupport.java:3804) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:3101) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzScheduler.notifyJobStoreJobComplete(QuartzScheduler.java:1780) [quartz-2.3.0.jar:?]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:269) [quartz-2.3.0.jar:?]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.0.jar:?]
+2019-09-29 20:46:30.701 +0800	WARN	org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler	144	quartzScheduler_QuartzSchedulerThread	Failed restore connection's original auto commit setting.
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:490) ~[HikariCP-2.7.9.jar:?]
+	at com.sun.proxy.$Proxy121.setAutoCommit(Unknown Source) ~[?:?]
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:395) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java) ~[HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3662) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3881) [quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802) [quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287) [quartz-2.3.0.jar:?]
+2019-09-29 20:46:30.702 +0800	ERROR	org.quartz.core.ErrorLogger	2401	quartzScheduler_QuartzSchedulerThread	An error occurred while scanning for the next triggers to fire.
+org.quartz.JobPersistenceException: Couldn't acquire next trigger: Communications link failure
+
+The last packet successfully received from the server was 60 milliseconds ago.  The last packet sent successfully to the server was 60 milliseconds ago.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2910) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2805) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2803) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802) ~[quartz-2.3.0.jar:?]
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287) [quartz-2.3.0.jar:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 60 milliseconds ago.  The last packet sent successfully to the server was 60 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_161]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTriggerToAcquire(StdJDBCDelegate.java:2613) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2844) ~[quartz-2.3.0.jar:?]
+	... 5 more
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_161]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_161]
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.9.jar:?]
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTriggerToAcquire(StdJDBCDelegate.java:2613) ~[quartz-2.3.0.jar:?]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2844) ~[quartz-2.3.0.jar:?]
+	... 5 more
+2019-09-29 20:48:17.402 +0800	INFO	org.springframework.boot.StartupInfoLogger	50	restartedMain	Starting ZimugeyjbApplication on PC-201908221240 with PID 3884 (C:\workspace\idea\000000000zimuge\zimugeyjb001\target\classes started by Administrator in C:\workspace\idea\000000000zimuge\zimugeyjb001)
+2019-09-29 20:48:17.407 +0800	INFO	org.springframework.boot.SpringApplication	666	restartedMain	The following profiles are active: dev
+2019-09-29 20:48:17.444 +0800	INFO	org.springframework.context.support.AbstractApplicationContext	590	restartedMain	Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3027861b: startup date [Sun Sep 29 20:48:17 CST 2019]; root of context hierarchy
+2019-09-29 20:48:18.839 +0800	INFO	org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker	326	restartedMain	Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4fe1df0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-29 20:48:19.703 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	91	restartedMain	Tomcat initialized with port(s): 8888 (http)
+2019-09-29 20:48:19.713 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Initializing ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:48:19.720 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting service [Tomcat]
+2019-09-29 20:48:19.721 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-09-29 20:48:19.724 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\Program Files\Java\jdk1.8.0_161\bin;D:\Program Files\Java\jdk1.8.0_161\jre\bin";D:\Program Files\Git\cmd;D:\Program Files\mysql-8.0.17-winx64\mysql-8.0.17-winx64\bin;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;D:\MongoDB\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;;.]
+2019-09-29 20:48:19.812 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	localhost-startStop-1	Initializing Spring embedded WebApplicationContext
+2019-09-29 20:48:19.812 +0800	INFO	org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext	285	localhost-startStop-1	Root WebApplicationContext: initialization completed in 2368 ms
+2019-09-29 20:48:19.906 +0800	INFO	org.springframework.boot.web.servlet.ServletRegistrationBean	187	localhost-startStop-1	Servlet dispatcherServlet mapped to [/]
+2019-09-29 20:48:19.909 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-29 20:48:19.909 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-29 20:48:19.909 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-29 20:48:19.910 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-29 20:48:19.910 +0800	INFO	org.springframework.boot.web.servlet.AbstractFilterRegistrationBean	245	localhost-startStop-1	Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-09-29 20:48:20.006 +0800	INFO	org.dozer.config.GlobalSettings	113	restartedMain	Trying to find Dozer configuration file: dozer.properties
+2019-09-29 20:48:20.012 +0800	WARN	org.dozer.config.GlobalSettings	118	restartedMain	Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2019-09-29 20:48:20.014 +0800	INFO	org.dozer.DozerInitializer	70	restartedMain	Initializing Dozer. Version: 5.4.0, Thread Name: restartedMain
+2019-09-29 20:48:20.016 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2019-09-29 20:48:20.016 +0800	INFO	org.dozer.jmx.JMXPlatformImpl	66	restartedMain	Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2019-09-29 20:48:20.019 +0800	INFO	org.dozer.DozerBeanMapper	175	restartedMain	Initializing a new instance of dozer bean mapper.
+2019-09-29 20:48:20.308 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1208	restartedMain	Using default implementation for ThreadExecutor
+2019-09-29 20:48:20.318 +0800	INFO	org.quartz.core.SchedulerSignalerImpl	61	restartedMain	Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-29 20:48:20.318 +0800	INFO	org.quartz.core.QuartzScheduler	229	restartedMain	Quartz Scheduler v.2.3.0 created.
+2019-09-29 20:48:20.323 +0800	INFO	com.zaxxer.hikari.HikariDataSource	110	restartedMain	HikariPool-1 - Starting...
+2019-09-29 20:48:20.944 +0800	INFO	com.zaxxer.hikari.HikariDataSource	123	restartedMain	HikariPool-1 - Start completed.
+2019-09-29 20:48:20.950 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	672	restartedMain	Using db table-based data access locking (synchronization).
+2019-09-29 20:48:20.952 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreCMT	145	restartedMain	JobStoreCMT initialized.
+2019-09-29 20:48:20.953 +0800	INFO	org.quartz.core.QuartzScheduler	294	restartedMain	Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2019-09-29 20:48:20.954 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1362	restartedMain	Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-29 20:48:20.954 +0800	INFO	org.quartz.impl.StdSchedulerFactory	1366	restartedMain	Quartz scheduler version: 2.3.0
+2019-09-29 20:48:20.954 +0800	INFO	org.quartz.core.QuartzScheduler	2287	restartedMain	JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@4bbd0887
+2019-09-29 20:48:21.435 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[DELETE]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.deleteArticle(java.lang.Long)
+2019-09-29 20:48:21.436 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle()
+2019-09-29 20:48:21.436 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[GET]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.getArticle(java.lang.Long)
+2019-09-29 20:48:21.437 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article],methods=[POST]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.saveArticle(com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:48:21.437 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/rest/article/{id}],methods=[PUT]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.ArticleRestController.updateArticle(java.lang.Long,com.unicom.zimugeyjb.model.ArticleVo)
+2019-09-29 20:48:21.437 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/system]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.system()
+2019-09-29 20:48:21.438 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/ex/user]}" onto public com.unicom.zimugeyjb.model.AjaxResponse com.unicom.zimugeyjb.controller.HelloController.user(java.lang.Integer)
+2019-09-29 20:48:21.438 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello2]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello2()
+2019-09-29 20:48:21.438 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello()
+2019-09-29 20:48:21.438 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/hello3]}" onto public java.lang.String com.unicom.zimugeyjb.controller.HelloController.hello3()
+2019-09-29 20:48:21.439 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/logdemo],methods=[GET]}" onto public java.lang.String com.unicom.zimugeyjb.controller.LogDemoController.log()
+2019-09-29 20:48:21.440 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/update],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException
+2019-09-29 20:48:21.440 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/delete],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.update(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:48:21.441 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/resume],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.resume(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:48:21.441 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/pause],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.pauseJob(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:48:21.441 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/run],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.runOnce(java.lang.String) throws org.quartz.SchedulerException
+2019-09-29 20:48:21.441 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/quartz/job/create],methods=[POST]}" onto public java.lang.String com.unicom.zimugeyjb.controller.QuartzController.createJob(com.unicom.zimugeyjb.timertask2.dynamic.QuartzBean) throws org.quartz.SchedulerException,java.lang.ClassNotFoundException
+2019-09-29 20:48:21.442 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/template/freemarker],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.unicom.zimugeyjb.controller.TemplateController.index(org.springframework.ui.Model)
+2019-09-29 20:48:21.443 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-29 20:48:21.445 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-29 20:48:21.446 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-29 20:48:21.447 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-29 20:48:21.448 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-29 20:48:21.449 +0800	INFO	org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry	547	restartedMain	Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-29 20:48:21.533 +0800	INFO	org.springframework.scheduling.concurrent.ExecutorConfigurationSupport	171	restartedMain	Initializing ExecutorService  'taskExecutor'
+2019-09-29 20:48:21.599 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:48:21.742 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter	574	restartedMain	Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3027861b: startup date [Sun Sep 29 20:48:17 CST 2019]; root of context hierarchy
+2019-09-29 20:48:21.789 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:48:21.789 +0800	INFO	org.springframework.web.servlet.handler.AbstractUrlHandlerMapping	373	restartedMain	Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-29 20:48:21.801 +0800	INFO	org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver	288	restartedMain	Detected @ExceptionHandler methods in webExceptionHandler
+2019-09-29 20:48:21.834 +0800	INFO	org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping	56	restartedMain	Adding welcome page: class path resource [public/index.html]
+2019-09-29 20:48:21.960 +0800	INFO	org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer	131	restartedMain	ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-09-29 20:48:22.143 +0800	INFO	org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer	57	restartedMain	LiveReload server is running on port 35729
+2019-09-29 20:48:22.165 +0800	INFO	org.springframework.jmx.export.MBeanExporter	433	restartedMain	Registering beans for JMX exposure on startup
+2019-09-29 20:48:22.166 +0800	INFO	org.springframework.jmx.export.MBeanExporter	895	restartedMain	Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-29 20:48:22.171 +0800	INFO	org.springframework.jmx.export.MBeanExporter	668	restartedMain	Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-29 20:48:22.175 +0800	INFO	org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup	351	restartedMain	Starting beans in phase 2147483647
+2019-09-29 20:48:22.175 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	120	restartedMain	Context refreshed
+2019-09-29 20:48:22.186 +0800	INFO	springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper	123	restartedMain	Found 1 custom documentation plugin(s)
+2019-09-29 20:48:22.196 +0800	INFO	springfox.documentation.spring.web.scanners.ApiListingReferenceScanner	41	restartedMain	Scanning for api listing references
+2019-09-29 20:48:22.280 +0800	INFO	springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator	40	restartedMain	Generating unique operation named: getArticleUsingGET_1
+2019-09-29 20:48:22.311 +0800	INFO	org.springframework.scheduling.quartz.SchedulerFactoryBean	700	restartedMain	Starting Quartz Scheduler now
+2019-09-29 20:48:22.617 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	866	restartedMain	Freed 0 triggers from 'acquired' / 'blocked' state.
+2019-09-29 20:48:22.735 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	876	restartedMain	Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2019-09-29 20:48:22.735 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	889	restartedMain	Recovery complete.
+2019-09-29 20:48:22.800 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	896	restartedMain	Removed 0 'complete' triggers.
+2019-09-29 20:48:22.845 +0800	INFO	org.quartz.impl.jdbcjobstore.JobStoreSupport	901	restartedMain	Removed 0 stale fired job entries.
+2019-09-29 20:48:22.953 +0800	INFO	org.quartz.core.QuartzScheduler	547	restartedMain	Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-29 20:48:22.982 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Starting ProtocolHandler ["http-nio-8888"]
+2019-09-29 20:48:23.003 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	restartedMain	Using a shared selector for servlet write/read
+2019-09-29 20:48:23.024 +0800	INFO	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	206	restartedMain	Tomcat started on port(s): 8888 (http) with context path ''
+2019-09-29 20:48:23.029 +0800	INFO	org.springframework.boot.StartupInfoLogger	59	restartedMain	Started ZimugeyjbApplication in 6.116 seconds (JVM running for 7.326)
+2019-09-29 20:48:28.361 +0800	INFO	org.apache.juli.logging.DirectJDKLog	180	http-nio-8888-exec-1	Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-29 20:48:28.362 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	494	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-29 20:48:28.381 +0800	INFO	org.springframework.web.servlet.FrameworkServlet	509	http-nio-8888-exec-1	FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
