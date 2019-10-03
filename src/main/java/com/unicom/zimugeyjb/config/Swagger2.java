@@ -16,6 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @ProjectName: zimugeyjb <br/>
  * @Date: 2019/9/9 15:38 <br/>
  * @Author: yangjiabin
+ *
  */
 @Configuration
 @EnableSwagger2
