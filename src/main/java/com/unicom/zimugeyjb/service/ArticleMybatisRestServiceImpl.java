@@ -6,7 +6,10 @@ import com.unicom.zimugeyjb.pojo.Article;
 import com.unicom.zimugeyjb.utils.DozerUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
+
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -48,6 +51,8 @@ public class ArticleMybatisRestServiceImpl implements ArticleRestService {
     }
 
     @Override
+    //@Cacheable(value = "article",key="#id",condition = "#id>1")
+    @Cacheable(value = "article")
     public ArticleVo getArticle(Long id) {
         Article article = articleMapper.selectByPrimaryKey(id);
         return dozerMapper.map(article,ArticleVo.class);

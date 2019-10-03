@@ -7,6 +7,7 @@ import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+
 import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.Date;
@@ -88,7 +89,7 @@ public class ArticleRestController {
         return AjaxResponse.success();
     }
 
-
+    //@Cacheable(value = "article")
     //@RequestMapping(value = "/article/{id}",method = RequestMethod.GET, produces = "application/json")
     @GetMapping("/article/{id}")
     public AjaxResponse getArticle(   @PathVariable Long id){
