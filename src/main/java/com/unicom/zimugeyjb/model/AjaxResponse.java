@@ -6,6 +6,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>
  * @Desc: <br/>
@@ -15,7 +17,10 @@ import lombok.Data;
  */
 @Data
 @ApiModel//统一返回类型描述
-public class AjaxResponse {
+public class AjaxResponse implements Serializable {
+
+    private static final long serialVersionUID = 5303524676787468527L;
+
 
     @ApiModelProperty("是否请求成功")
     private boolean isok;
