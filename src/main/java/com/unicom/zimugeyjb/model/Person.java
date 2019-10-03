@@ -1,6 +1,8 @@
 package com.unicom.zimugeyjb.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
 
 import java.io.Serializable;
 
@@ -12,11 +14,13 @@ import java.io.Serializable;
  * @Author: yangjiabin
  */
 @Data
+@RedisHash("people")
 public class Person implements Serializable {
 
 
     private static final long serialVersionUID = 4264551646588848391L;
 
+    @Id
     String id;
 
     String firstName;
