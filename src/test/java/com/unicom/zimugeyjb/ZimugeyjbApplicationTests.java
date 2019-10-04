@@ -7,6 +7,7 @@ import com.unicom.zimugeyjb.pojo.Article;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 30*60*100)
 public class ZimugeyjbApplicationTests {
 
     @Test
