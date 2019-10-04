@@ -16,13 +16,13 @@ import java.io.Serializable;
  * @Author: yangjiabin
  */
 @Data
-@ApiModel//统一返回类型描述
-public class AjaxResponse implements Serializable {
-
-    private static final long serialVersionUID = 5303524676787468527L;
+//@ApiModel//统一返回类型描述
+public class AjaxResponse   {
 
 
-    @ApiModelProperty("是否请求成功")
+
+
+    //@ApiModelProperty("是否请求成功")
     private boolean isok;
     private int code;
     private String message;

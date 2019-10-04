@@ -50,9 +50,10 @@ public class ArticleMybatisRestServiceImpl implements ArticleRestService {
         articleMapper.updateByPrimaryKey(article);
     }
 
+
+    //@Cacheable(value = "article")
     @Override
     //@Cacheable(value = "article",key="#id",condition = "#id>1")
-    @Cacheable(value = "article")
     public ArticleVo getArticle(Long id) {
         Article article = articleMapper.selectByPrimaryKey(id);
         return dozerMapper.map(article,ArticleVo.class);

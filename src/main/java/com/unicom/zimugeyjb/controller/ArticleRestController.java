@@ -5,6 +5,7 @@ import com.unicom.zimugeyjb.model.ArticleVo;
 import com.unicom.zimugeyjb.service.ArticleRestService;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -88,7 +89,7 @@ public class ArticleRestController {
 
         return AjaxResponse.success();
     }
-
+    @Cacheable(value="article")
     //@Cacheable(value = "article")
     //@RequestMapping(value = "/article/{id}",method = RequestMethod.GET, produces = "application/json")
     @GetMapping("/article/{id}")

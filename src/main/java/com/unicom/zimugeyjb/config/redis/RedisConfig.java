@@ -14,19 +14,11 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
-/**
- * @Copyright: Unicom (Zhejiang) Industrial Internet Co., Ltd.    2019 <br/>
- * @Desc: <br/>
- * @ProjectName: zimugeyjb <br/>
- * @Date: 2019/10/3 19:51 <br/>
- * @Author: yangjiabin
- */
 @Configuration
 public class RedisConfig {
 
-
     @Bean
-    public RedisTemplate redisTemplate(RedisConnectionFactory redisConnectionFactory){
+    public RedisTemplate redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate redisTemplate = new RedisTemplate();
         redisTemplate.setConnectionFactory(redisConnectionFactory);
         Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
@@ -37,33 +29,23 @@ public class RedisConfig {
 
         jackson2JsonRedisSerializer.setObjectMapper(objectMapper);
 
-        //重点再这四行代码
+        //重点在这四行代码
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         redisTemplate.setValueSerializer(jackson2JsonRedisSerializer);
         redisTemplate.setHashKeySerializer(new StringRedisSerializer());
         redisTemplate.setHashValueSerializer(jackson2JsonRedisSerializer);
 
         redisTemplate.afterPropertiesSet();
-
         return redisTemplate;
     }
 
 
-    /**  本节重点配置，让缓存的序列化方式使用
-     *   redisTemplate.getValueSerializer();
-     */
+    //本节的重点配置，让缓存的序列化方式使用redisTemplate.getValueSerializer()
     @Bean
-    public RedisCacheManager redisCacheManager(RedisTemplate redisTemplate){
-        RedisCacheWriter redisCacheWriter = RedisCacheWriter
-                .nonLockingRedisCacheWriter(redisTemplate.getConnectionFactory());
-
-        RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration
-                .defaultCacheConfig()
-                .serializeValuesWith(RedisSerializationContext
-                        .SerializationPair.fromSerializer(redisTemplate.getValueSerializer()));
-
-        return new RedisCacheManager(redisCacheWriter,redisCacheConfiguration);
+    public RedisCacheManager redisCacheManager(RedisTemplate redisTemplate) {
+        RedisCacheWriter redisCacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(redisTemplate.getConnectionFactory());
+        RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration.defaultCacheConfig()
+                .serializeValuesWith(RedisSerializationContext.SerializationPair.fromSerializer(redisTemplate.getValueSerializer()));
+        return new RedisCacheManager(redisCacheWriter, redisCacheConfiguration);
     }
-
-
 }
