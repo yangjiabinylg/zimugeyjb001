@@ -17,7 +17,7 @@ public interface ArticleRestService {
 
     void deleteArticle(Long id);
 
-    void updateArticle(ArticleVo articleVo);
+    ArticleVo updateArticle(ArticleVo articleVo);
 
     ArticleVo getArticle(Long id);
 

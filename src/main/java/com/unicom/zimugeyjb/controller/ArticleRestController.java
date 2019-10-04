@@ -89,12 +89,15 @@ public class ArticleRestController {
 
         return AjaxResponse.success();
     }
-    @Cacheable(value="article")
+
+
+
+    //@Cacheable(value="article")
     //@Cacheable(value = "article")
     //@RequestMapping(value = "/article/{id}",method = RequestMethod.GET, produces = "application/json")
     @GetMapping("/article/{id}")
     public AjaxResponse getArticle(   @PathVariable Long id){
-        //public AjaxResponse saveArticle(@RequestBody   ArticleVo article){
+    //public AjaxResponse saveArticle(@RequestBody   ArticleVo article){
 
         ArticleVo article = articleRestService.getArticle(id);
 
