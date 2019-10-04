@@ -105,7 +105,7 @@ public class ArticleRestController {
     }
 
     @GetMapping("/article")
-    public @ResponseBody AjaxResponse getArticle(){
+    public @ResponseBody AjaxResponse getArticleAll(){
         //public AjaxResponse saveArticle(@RequestBody   ArticleVo article){
 
         List<ArticleVo> articleVoList = articleRestService.getAll();

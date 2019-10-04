@@ -63,12 +63,14 @@ public class ArticleMybatisRestServiceImpl implements ArticleRestService {
     //@Cacheable(value = "article")
     @Override
     @Cacheable(value = "article",key="#id",condition = "#id > 1")
+    //@Cacheable(value = "article")
     public ArticleVo getArticle(Long id) {
         // todo 把读者信息查询出来复制给ArticleVo
         Article article = articleMapper.selectByPrimaryKey(id);
         return dozerMapper.map(article,ArticleVo.class);
     }
 
+    @Cacheable(value = "articleAll")
     @Override
     public List<ArticleVo> getAll() {
         List<Article> articleList = articleMapper.selectByExample(null);
